@@ -1,0 +1,14 @@
+*
+
+!*.h
+!*.md
+!*.cpp
+!*.cmake
+!.gitignore
+!CMakeLists.txt
+
+!tests/
+!server/
+!sdk/
+!cmake/
+!cmake/fetch/
