@@ -15,7 +15,7 @@
 
 !sdk/example
 !sdk/myclass
-!sdk/myclass/Makefile
+!sdk/myclass/makefile
 !sdk/myclass/include
 !sdk/myclass/src
 !sdk/example/makefile
