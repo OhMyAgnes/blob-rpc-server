@@ -12,3 +12,5 @@
 !sdk/
 !cmake/
 !cmake/fetch/
+
+！sdk/makefile
