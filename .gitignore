@@ -6,7 +6,9 @@
 !*.cmake
 !.gitignore
 !CMakeLists.txt
-
+!*.cc
+!*.proto
+!*.so
 !tests/
 !server/
 !sdk/
@@ -20,3 +22,6 @@
 !sdk/example/makefile
 !sdk/myclass/makefile
 !sdk/makefile
+
+!server/makefile
+!server/lib
