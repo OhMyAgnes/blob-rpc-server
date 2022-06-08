@@ -1,0 +1,18 @@
+Language:        Cpp
+BasedOnStyle:  google
+ColumnLimit:     100
+IndentWidth:     4
+SortIncludes: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterClass: true
+    AfterStruct: true
+    AfterEnum: true
+    AfterNamespace: true
+    AfterExternBlock: true
+    AfterFunction: true
+    AfterCaseLabel: true
+    BeforeElse: true
+    AfterControlStatement: true
+    BeforeCatch: true
+    
