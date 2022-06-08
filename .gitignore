@@ -5,11 +5,14 @@
 !*.cpp
 !*.cmake
 !.gitignore
+!.clang-format
 !CMakeLists.txt
 
 !tests/
 !server/
 !sdk/
+!sdk/include/
+
 !cmake/
 !cmake/fetch/
 
