@@ -20,6 +20,32 @@
 - 编译器：gcc7.4/msvc150（至少需要支持C++11）
 - 版本管理：Git
 
+以上环境都搭建完成之后，还需要为我们的项目安装grpc环境。grpc是Google的一个开源框架。
+Linux可以很方便的用源码编译安装。
+```shell
+# ubuntu
+git clone --depth=1 -b v1.41.1 https://github.com/grpc/grpc.git && \
+    cd grpc && git submodule update --init && mkdir build && cd build && cmake -DgRPC_INSTALL=ON -DCMAKE_BUILD_TYPE=Release -DgRPC_BUILD_TESTS=OFF -DgRPC_SSL_PROVIDER=module .. && make -j4 && make install
+```
+
+Windows推荐用vcpkg安装 [参考这里](https://github.com/grpc/grpc/blob/master/src/cpp/README.md#install-using-vcpkg-package)
+```shell
+# windows powershell
+# install vcpkg package manager on your system using the official instructions
+git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+
+# Bootstrap on Linux:
+./bootstrap-vcpkg.sh
+# Bootstrap on Windows instead:
+# ./bootstrap-vcpkg.bat
+
+./vcpkg integrate install
+
+# install gRPC using vcpkg package manager
+./vcpkg install grpc
+```
+
 ## 需求分析、接口设计
 
 ## 协同开发
