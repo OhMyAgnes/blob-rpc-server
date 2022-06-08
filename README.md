@@ -20,6 +20,12 @@
 - 编译器：gcc7.4/msvc150（至少需要支持C++11）
 - 版本管理：Git
 
+以上环境都搭建完成之后，还需要为我们的项目安装grpc环境。grpc是Google的一个开源框架。
+```shell
+git clone --depth=1 -b v1.41.1 https://github.com/grpc/grpc.git && \
+    cd grpc && git submodule update --init && mkdir build && cd build && cmake -DgRPC_INSTALL=ON -DCMAKE_BUILD_TYPE=Release -DgRPC_BUILD_TESTS=OFF -DgRPC_SSL_PROVIDER=module .. && make -j4 && make install
+```
+
 ## 需求分析、接口设计
 
 ## 协同开发

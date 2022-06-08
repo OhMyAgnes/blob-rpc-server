@@ -13,11 +13,3 @@
 !cmake/
 !cmake/fetch/
 
-!sdk/example
-!sdk/myclass
-!sdk/myclass/include
-!sdk/myclass/src
-!sdk/example/makefile
-!sdk/myclass/makefile
-!sdk/makefile
-
