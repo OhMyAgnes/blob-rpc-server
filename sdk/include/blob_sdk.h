@@ -66,6 +66,9 @@ struct Response
 class BlobSDK
 {
    public:
+    BlobSDK();
+    ~BlobSDK();
+
     /**
      * @brief 初始化sdk的所有资源。整个生命周期只用调用一次
      *
