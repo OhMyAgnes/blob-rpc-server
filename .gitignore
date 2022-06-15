@@ -4,12 +4,16 @@
 !*.md
 !*.cpp
 !*.cmake
+!*.proto
 !.gitignore
 !.clang-format
 !CMakeLists.txt
 
 !tests/
 !server/
+!server/common/
+!server/proto/
+
 !sdk/
 !sdk/include/
 

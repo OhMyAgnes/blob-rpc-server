@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package algointerface;
+
+service  AlgoEngine {
+    rpc AlgoInferRun(AlgoInferReq) returns(AlgoInferRsp) {}
+}
+
+
+message Image
+{
+    int32 width = 1;
+    int32 height = 2;
+    int32 channels = 3;
+    bytes data = 4;
+}
+
+message Point
+{
+    int32 x = 1;
+    int32 y = 2;
+}
+
+message Contour
+{
+    repeated Point pts = 1;
+}
+
+message AlgoInferReq
+{
+    float threshold = 1;
+    Image image = 2;    //输入图像
+}
+
+message AlgoInferRsp {
+    repeated Contour contours = 1;
+}
